@@ -45,8 +45,8 @@ body{
     color: white;
     height: 45px;
     cursor: pointer;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
+    border-radius: 13px;
+    padding: 4px;
     font-family: Roboto Mono;
     font-size: 14px;
 }
