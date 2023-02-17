@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: #1E1E1E;
+    color: white;
+    font-family: Roboto Mono;
+    font-size: 18px;
+}
+.navbar{
+    height: 80px;
+    width: 100%;
+    background-color: rgb(255, 115, 0);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+}
+
+.items{
+    display: flex;
+    align-items: center;
+}
+.items  li{
+    text-decoration: none;
+    list-style: none;
+    padding: 0px 25px 0px 25px;
+    cursor: pointer;
+}
+.Search-box{
+    display: flex;
+    background-color: white;
+    width: 300px;
+    height: 45px;
+    align-items: center;
+    border-radius: 15px;
+}
+.Search-btn{
+    background-color:rgb(255, 115, 0);
+    border:solid white;
+    color: white;
+    height: 45px;
+    cursor: pointer;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    font-family: Roboto Mono;
+    font-size: 14px;
+}
+
+.dark-icon{
+    height: 45px;
+    cursor: pointer;
+}
+.block-1{
+    width: 200px;
+    background-color: rgb(255, 105, 105);
+}
+
+.dark-mode{
+    background-color: white;
+    color: black;
+}
+#Search-bar{
+    background-color: transparent;
+    border: transparent;
+    padding-left: 10px;
+    width: 244px;
+    outline: transparent;
+    height: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 15px;
+}
+.blank{
+    height: 100px;
+}
+.content-head{
+    display: flex;
+}
+.info{
+    width: 800px;
+    height: 600px;
+    background-color: red;
+}
