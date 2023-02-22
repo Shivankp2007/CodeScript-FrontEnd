@@ -1,15 +1,13 @@
-var body = document.body;
-var darkimg =document.getElementsByClassName('dark-icon');
 
-function togglewb(){
-    body.classList.toggle("dark-mode");
+var body = document.body
+var partwhite = document.getElementsByClassName("part-1")
+var partwhite = document.getElementsByClassName("part-2")
+var x = document.getElementById("x");
+
+function Whitemode(){
+  body.classList.toggle('part-1-white')
 }
 
 function profile(){
-    var x = document.getElementById("profile-dropdown");
-  if (x.style.display == "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
+  x.classList.toggle("open");
 }
