@@ -13,7 +13,7 @@ body{
 }
 .white-mode{
     background-color: white;
-    color: black;
+    color: rgb(0, 0, 0);
 }
 .navbar{
     height: 80px;
@@ -136,19 +136,13 @@ p{
 #profile-dropdown{
     height: 235px;
     width: 345px;
-    background-color: black;
     position: relative;
     top: 70px;
     float: right;
     right: 76px;
     position:fixed;
     display: block;
-    background-color:transparent;
     border-radius: 13px;
-}
-.part-1-white{
-    background-color: white;
-    color:white;
 }
 .part-1{
     display:flex;
