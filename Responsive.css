@@ -1,0 +1,27 @@
+@media  screen and (max-width:1024px)  {
+    p{
+        font-size: 18px;
+    }
+    .main-img{
+        width: 705px;
+        height: 272px  
+    }
+}
+
+@media screen and (max-width:924px) {
+    .navbar{
+        font-size:16px;;
+    }
+    
+}
+
+@media screen and (max-width:768px) {
+    .navbar{
+        font-size: 10px;
+    }
+    .Search-box{
+        width: 197px;
+        height: 35px;
+    }
+    
+}
