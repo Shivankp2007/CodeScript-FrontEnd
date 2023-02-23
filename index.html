@@ -10,7 +10,7 @@
     <title>CodecScript</title>
 </head>
 <body>
-    <div class="x">
+    <div class="">
     <div class="navbar">
         <div class="logo">CodecScript
         </div>
@@ -23,11 +23,11 @@
             <li>Login</li>
             <li>Home</li>
             <li>About Us</li>
-                <a class="dark-icon-link" type="button"  ><img onclick="profile()" id="dark-icon" src="Icons\user.png" alt=""></a>            
+                <a class="dark-icon-link" type="button" ><img onclick="Open_Close()" id="dark-icon" src="Icons\user.png" alt=""></a>            
         </div>
     </div>
     </div>
-    <div id="x">
+    <div id="x" class="x">
     <div id="profile-dropdown">
         <div class="part-1">
             <div class="avatar-wrap"><img class="avatar" src="Icons/avatar.jpg" alt=""></div>
@@ -47,7 +47,7 @@
             <div class="sep"></div>
             <div class="manage-account">
                 <img  class="manage-account-icon" src="Icons/avatar.jpg" alt="">
-                <a href="">Setings</a>
+                <button type="button" onclick="Close_Open()"><a>Setings</a></button>
             </div>
         
         <div class="part-3"></div>
@@ -62,7 +62,8 @@
         </div>
     </div>
 </div>
-    <div class="content">
+<div id="middle" class="open" >
+    <div class="content" id="content">
         <div class="blank"></div>
         <div class="content-head">
             <div class="blank-1"></div>
@@ -84,6 +85,7 @@
         <div class="content-middle"></div>
         <div class="content-foot"></div>
     </div>
+</div>
     <div class="footer"></div>
 </body>
 <script src="index.js">

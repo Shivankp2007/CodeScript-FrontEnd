@@ -1,13 +1,19 @@
 
-var body = document.body
-var partwhite = document.getElementsById("part-2");
+var body = document.body;
 var x = document.getElementById("x");
+var y= document.getElementsById('middle');
 
 function Whitemode(){
   body.classList.toggle('white-mode');
-  partwhite.classList.toggle('part-1-white');
+
 }
 
-function profile(){
-  x.classList.toggle("open");
+function Open_Close(){
+  x.classList.toggle("open"); 
+}
+
+function Close_Open() {
+  y.classList.toggle
+
+  
 }
