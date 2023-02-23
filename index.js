@@ -17,9 +17,11 @@ function Open_Close(){
 function Close_Open() {
   z.classList.add("close");
   y.classList.add("open-setings");
-  x.classList.remove("open")
+  x.classList.remove("open");
+  bck_btn.classList.add("close-button")
 }
 function Close_Back(){
   y.classList.remove("open-setings");
   z.classList.remove("close")
+  bck_btn.classList.remove("close-button")
 }

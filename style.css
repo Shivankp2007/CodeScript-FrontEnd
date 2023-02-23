@@ -176,6 +176,12 @@ p{
     color: var(--autobackground);
     transition-duration: .3s;
 }
+.close-button{
+    height: 48px;
+    width: 48px;
+    top: 56px;
+    position: absolute;
+}
 
 #profile-dropdown{
     height: 235px;
