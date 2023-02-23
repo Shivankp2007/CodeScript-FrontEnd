@@ -4,6 +4,16 @@
     margin: 0px;
     padding: 0px;
 }
+.setting{
+    text-decoration: underline;
+    color: yellow;
+    cursor: pointer;
+}
+#middle-setings{
+    background-color: red;
+    height: 600px;
+    width: 100%;
+}
 .opend{
     display: none;
 }
@@ -124,9 +134,32 @@ body{
 .blank-2{
     height: 100px;
 }
-.content-middle{
+.open-setings{
     background-color: lime;
     height: 500px;
+    display: block;
+}
+.close-setings{
+    background-color: lime;
+    height: 500px;
+    display: none;
+}
+.open_content-setings{
+    background-color: lime;
+    height: 500px;
+    display: none;
+}
+.dark-icon{
+    height: 48px;
+    width: 48px;
+    top: 95px;
+    position: fixed;
+    cursor: pointer;
+}
+.side-bar{
+    height: 100%;
+    width: 300px;
+    background: rosybrown;
 }
 ::-webkit-scrollbar{
     background-color:var();

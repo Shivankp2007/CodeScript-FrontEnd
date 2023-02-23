@@ -1,7 +1,8 @@
 
 var body = document.body;
 var x = document.getElementById("x");
-var y= document.getElementsById('middle');
+var z= document.getElementById("middle");
+var y = document.getElementById('content-setings');
 
 function Whitemode(){
   body.classList.toggle('white-mode');
@@ -13,7 +14,10 @@ function Open_Close(){
 }
 
 function Close_Open() {
-  y.classList.toggle
-
-  
+  z.classList.add("close");
+  y.classList.add("open-setings");
+}
+function Close_Back(){
+  y.classList.add("close-setings");
+  z.classList.remove("close")
 }
