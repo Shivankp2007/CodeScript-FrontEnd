@@ -16,7 +16,18 @@
 }
 @media screen and (max-width:1440px) {
     #profile-dropdown{
-        right: -77px;
+        right: -28px;
+        top: 280px;
+        background: transparent;
+        display: flex;
+        flex-direction: column;
+        z-index: 1;;
+    }
+    .part-1{
+        background-color: var(--autobackground);
+    }
+    .part-2{
+        background-color: var(--autobackground);
     }
     
 }
