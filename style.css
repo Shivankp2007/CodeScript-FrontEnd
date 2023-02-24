@@ -9,11 +9,7 @@
     color: yellow;
     cursor: pointer;
 }
-#middle-setings{
-    background-color: red;
-    height: 600px;
-    width: 100%;
-}
+
 .opend{
     display: none;
 }
@@ -190,26 +186,58 @@ body{
   background: var(--black-color);
 } 
 .side-start{
-    background-color: red;
-    height: 90px;
+    height: 60px;
     width: 100%;
-}
-.side-bar-items{
-    background-color: lime;
-    height: 100%;
-    margin-top: 20px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5px;
+}
+.setings-text{
+    margin-right: 130px;
+}
+.side-bar-item:hover{
+    background-color: #000;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.account-text{
+    font-weight: 500;
+    padding-left: 52px;
 }
 .side-bar-item{
-    background-color: #000;
     width: 100%;
     height: 70px;
     margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    overflow-y: scroll;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.sep-1{
+    height: 3px;
+    background: gray;
+    margin-bottom: 14px;
+    width: 186px;
+}
+.sep-line{
+    width: 3px;
+    background-color: gray;
+    height: 500px;
+}
+.side-bar-items-text{
+    border-left: 3px solid gray;
+    padding-left: 10px;
+}
+.side-bar-icons{
+    height: 38px;
+    width: 38px;
 }
 .sidebar{
     height: 826px;
-    width: 300px;
+    width: 347px;
     background: var(--autobackground-2);
     padding: 6px 14px;
     transition: all 0.5s ease;
@@ -219,6 +247,12 @@ body{
     position: relative;
     top: 80px;
 }  
+.side-bar-end{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
 p{
     font-size: 24px;
 }
