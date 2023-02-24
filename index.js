@@ -7,11 +7,13 @@ var bck_btn = document.getElementById('close-btn');
 
 function Whitemode(){
   body.classList.toggle('white-mode');
+  x.classList.add('close');
 
 }
 
 function Open_Close(){
-  x.classList.toggle("open"); 
+  x.classList.remove('close');
+  x.classList.toggle('open') 
 }
 
 function Close_Open() {

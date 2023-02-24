@@ -55,7 +55,6 @@ body{
 .items  li{
     text-decoration: none;
     list-style: none;
-    padding: 0px 25px 0px 25px;
     cursor: pointer;
 }
 .Search-box{
@@ -158,6 +157,9 @@ body{
     position: fixed;
     cursor: pointer;
 }
+.blocky{
+    width: 60px;
+}
 .side-bar{
     height: 100%;
     width: 300px;
@@ -177,9 +179,16 @@ p{
 .m{
     display: none;
 }
+.logo{
+    cursor: pointer;
+}
+
 .items li:hover{
     color: var(--autobackground);
-    transition-duration: .3s;
+    transition-duration: .4s;
+    border-bottom-style: groove;
+    border-bottom: 3px solid;
+    border-bottom-width: 1px;
 }
 .close-btn{
     height: 58px;
@@ -348,4 +357,9 @@ p{
     height: 500px;
     width: 100%;
     background: red;
+}
+.footer{
+    background-color: var(--main);
+    height: 100px;
+    width: 100%;
 }
