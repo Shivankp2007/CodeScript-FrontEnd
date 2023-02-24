@@ -44,7 +44,9 @@ body{
     align-items: center;
     justify-content: space-around;
     position: fixed;
+    z-index: 1;
 }
+
 
 .items{
     display: flex;
@@ -137,7 +139,7 @@ body{
 .open-setings{
     background-color: lime;
     height: 500px;
-    display: block;
+    display: flex;
 }
 .close-setings{
     background-color: lime;
@@ -172,15 +174,19 @@ body{
 p{
     font-size: 24px;
 }
+.m{
+    display: none;
+}
 .items li:hover{
     color: var(--autobackground);
     transition-duration: .3s;
 }
-.close-button{
-    height: 48px;
-    width: 48px;
-    top: 56px;
+.close-btn{
+    height: 58px;
+    width: 58px;
     position: absolute;
+    top: 80px;
+    padding: 10px;
 }
 
 #profile-dropdown{
@@ -338,6 +344,8 @@ p{
     width: 34px;
     padding: 10px;
 }
-.acc{
-
+.content-bar{
+    height: 500px;
+    width: 100%;
+    background: red;
 }
