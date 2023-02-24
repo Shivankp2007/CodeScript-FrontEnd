@@ -1,9 +1,18 @@
-
 var body = document.body;
 var x = document.getElementById("x");
 var z= document.getElementById("middle");
 var y = document.getElementById('content-setings');
 var bck_btn = document.getElementById('close-btn');
+let btn = document.querySelector("#btn");
+let sidebar = document.querySelector(".sidebar");
+let searchBtn = document.querySelector(".bx-search");
+
+btn.onclick = function(){
+  sidebar.classList.toggle("active");
+}
+searchBtn.onclick = function(){
+  sidebar.classList.toggle("active");
+}
 
 function Whitemode(){
   body.classList.toggle('white-mode');

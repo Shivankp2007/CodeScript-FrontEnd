@@ -136,17 +136,16 @@ body{
     height: 100px;
 }
 .open-setings{
-    background-color: lime;
-    height: 500px;
+    background-color: var(--autobackground);
+    height: 830px;
     display: flex;
+    flex-direction: row;
 }
 .close-setings{
-    background-color: lime;
     height: 500px;
     display: none;
 }
 .open_content-setings{
-    background-color: lime;
     height: 500px;
     display: none;
 }
@@ -160,11 +159,7 @@ body{
 .blocky{
     width: 60px;
 }
-.side-bar{
-    height: 100%;
-    width: 300px;
-    background: rosybrown;
-}
+
 ::-webkit-scrollbar{
     background-color:var();
     width: 8px;
@@ -173,6 +168,57 @@ body{
     background-color:gray;
     border-radius: 30px;
 }
+.content-bar{
+    height: 830px;
+    width: 100%;
+    display: flex;
+}
+.end-footer{
+    background-color: #79caff;
+    height: 25px;
+    width: 100%;
+    position:fixed;
+    bottom: 0px;
+}
+.end-footer-text{
+    text-align: center;
+    font-size: 16px;
+    color: #000;
+}
+::selection{
+  color:var(--white-color);
+  background: var(--black-color);
+} 
+.side-start{
+    background-color: red;
+    height: 90px;
+    width: 100%;
+}
+.side-bar-items{
+    background-color: lime;
+    height: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.side-bar-item{
+    background-color: #000;
+    width: 100%;
+    height: 70px;
+    margin-top: 10px;
+}
+.sidebar{
+    height: 826px;
+    width: 300px;
+    background: var(--autobackground-2);
+    padding: 6px 14px;
+    transition: all 0.5s ease;
+    scroll-behavior: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: relative;
+    top: 80px;
+}  
 p{
     font-size: 24px;
 }
@@ -208,6 +254,7 @@ p{
     position:fixed;
     display: block;
     border-radius: 13px;
+    background-color: var(--autobackground);
 }
 .part-1{
     display:flex;
@@ -338,9 +385,7 @@ p{
     height: 3px;
     background-color: rgb(92, 92, 92);
 }
-.triangle{
 
-}
 .manage-account{
     height: 50px;
     width: 260px;
@@ -353,13 +398,10 @@ p{
     width: 34px;
     padding: 10px;
 }
-.content-bar{
-    height: 500px;
-    width: 100%;
-    background: red;
-}
 .footer{
     background-color: var(--main);
     height: 100px;
     width: 100%;
+    position: fixed;
+    bottom: 0;
 }
