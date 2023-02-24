@@ -10,7 +10,7 @@
 
 @media screen and (max-width:924px) {
     .navbar{
-        font-size:16px;;
+        font-size:16px;
     }
     
 }
@@ -23,8 +23,40 @@
 
 @media screen and (max-width:768px) {
     .navbar{
-        font-size: 10px;
+        font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    height: 282px;
     }
+    .middle{
+        position: absolute;
+    }
+    .blocky{
+        height: 12px;
+    }
+    .content{
+        position: relative;
+        top: 135px;
+    }
+    .content-head{
+        display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: baseline;
+    align-content: stretch;
+    }
+    .main-img{
+        position: relative;
+        position: relative;
+    bottom: 309px;
+    }
+    .items{
+        display: flex;
+        flex-direction: column;
+        margin-top: 5px;
+    }
+
     .Search-box{
         width: 197px;
         height: 35px;
@@ -37,6 +69,16 @@
         position: relative;
         right: 50px;
         border-radius: 10px;
+    }
+    
+}
+@media  screen and (max-width:411px) {
+    .navbar{
+        height: 100px;
+        font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    height: 135px;
     }
     
 }
