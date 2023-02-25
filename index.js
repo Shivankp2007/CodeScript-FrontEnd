@@ -10,13 +10,13 @@ let searchBtn = document.querySelector(".bx-search");
 
 function Whitemode(){
   body.classList.toggle('white-mode');
-  x.classList.add('close');
+  addEventListener()
 
 }
 
 function Open_Close(){
   x.classList.remove('close');
-  x.classList.toggle('open') 
+  x.classList.toggle('open');
 }
 
 function Close_Open() {

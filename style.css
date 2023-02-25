@@ -4,34 +4,16 @@
     margin: 0px;
     padding: 0px;
 }
-.setting{
-    text-decoration: underline;
-    color: yellow;
-    cursor: pointer;
-}
 
-.opend{
-    display: none;
-}
-.x{
-    display: none;
-}
-.open{
-    display: block;
-}
-.close{
-    display: none;
-}
 body{
     background-color:var(--autobackground);
     color:var(--autofont);
     font-family: Roboto Mono;
     font-size: 18px;
 }
-.white-mode{
-    background-color: white;
-    color: rgb(0, 0, 0);
-}
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  Nav-bar CSS Starts from here >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+
 .navbar{
     height: 80px;
     width: 100%;
@@ -43,6 +25,12 @@ body{
     z-index: 1;
 }
 
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  END  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+.setting{
+    text-decoration: underline;
+    color: yellow;
+    cursor: pointer;
+}
 
 .items{
     display: flex;
@@ -197,11 +185,7 @@ body{
 .setings-text{
     margin-right: 130px;
 }
-.side-bar-item:hover{
-    background-color: #000;
-    border-radius: 15px;
-    cursor: pointer;
-}
+
 .account-text{
     font-weight: 500;
     padding-left: 52px;
@@ -272,14 +256,6 @@ p{
 }
 .logo{
     cursor: pointer;
-}
-
-.items li:hover{
-    color: var(--autobackground);
-    transition-duration: .4s;
-    border-bottom-style: groove;
-    border-bottom: 3px solid;
-    border-bottom-width: 1px;
 }
 .close-btn{
     height: 58px;
@@ -370,7 +346,8 @@ p{
     width: 23px;
     height: 20px;
     border-radius: 50%;
-    transition: 0.5s ease transform, 0.2s ease background-color;
+    transition: 0.5s ease 
+    transform, 0.2s ease background-color;
   }
   
   #_1st-toggle-btn span:after{
@@ -449,4 +426,49 @@ p{
     width: 100%;
     position: fixed;
     bottom: 0;
+}
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  Display none/block effects Starts from here >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+
+.opend{
+    display: none;
+}
+.x{
+    display: none;
+}
+.open{
+    display: block;
+}
+.close{
+    display: none;
+}
+
+
+
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  Hover effects Starts from here >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+
+
+.side-bar-item:hover{
+    background-color: #000;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.items li:hover{
+    color: var(--autobackground);
+    transition-duration: .4s;
+    border-bottom-style: groove;
+    border-bottom: 3px solid;
+    border-bottom-width: 1px;
+}
+
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  Java_Script CSS Starts from here >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+
+.white-mode{
+    background-color: white;
+    color: rgb(0, 0, 0);
 }
