@@ -7,6 +7,7 @@
       <link rel="stylesheet" href="style.css">
       <link rel="stylesheet" href="colors.css">
       <link rel="stylesheet" href="Responsive.css">
+      <link rel="stylesheet" href="new.css">
       <title>CodecScript</title>
    </head>
    <body>
@@ -25,7 +26,7 @@
                <div class="blocky"></div>
                <li>Home</li>
                <div class="blocky"></div>
-               <li>About Us</li>
+               <li onclick="Open_About()">About Us</li>
                <div class="blocky"></div>
                <a class="dark-icon-link" type="button" ><img onclick="Open_Close()" id="dark-icon" src="Icons\user.png" alt=""></a>                       
             </div>
@@ -47,13 +48,13 @@
             <div class="part-2">
                <div class="manage-account">
                   <img class="manage-account-icon-white" src="Icons/account-icon-white.png" alt="">
-                  <img class="manage-account-icon" src="Icons/account-icon-dark.png" alt="">
+                  <img class="manage-account-icon-dark" src="Icons/account-icon-dark.png" alt="">
                   <a class="acc" href="">Manage Account</a>
                </div>
                <div class="sep"></div>
                <div class="manage-account">
-                  <img  class="manage-account-icon" src="Icons/icons8-settings-48.png" alt="">
-                  <img  class="manage-account-icon" src="Icons/icons8-settings-48.png" alt="">
+                  <img id="manage-account-iconwhite" class="manage-account-icon-white" src="Icons/Setings-dark.png" alt="">
+                  <img id="manage-account-icondark"  class="manage-account-icon-dark" src="Icons/Setings-white.png" alt="">
                   <div class="setting" onclick="Close_Open()"><a>Setings</a></div>
                </div>
                <div class="part-3"></div>
@@ -129,13 +130,15 @@
          <div class="sidebar" id="sidebar">
             <div class="sidebar-starter">
                <div class="side-start">
-                  <div class="setings-icon"><img src="Icons/icons8-settings-48.png" alt=""></div>
+                  <img id="manage-account-iconwhite-1" class="manage-account-icon-white" src="Icons/Setings-dark.png" alt="">
+                  <img id="manage-account-icondark-1"  class="manage-account-icon-dark" src="Icons/Setings-white.png" alt="">
                   <div class="setings-text">Setings</div>
                </div>
                <div class="sep-1"></div>
                <div class="account-text">ACCOUNT</div>
                <div class="side-bar-items">
                   <div class="side-bar-item">
+                     <img  class="side-bar-icons" src="Icons/setting.png" alt="">
                      <img  class="side-bar-icons" src="Icons/setting.png" alt="">
                      <div class="side-bar-items-text">Your Account</div>
                   </div>
@@ -166,8 +169,15 @@
          </div>
          <div class="setings-manage-account">
             <div>
-               <img id= "close-btn"class="previous" src="Icons/previous (2).png" onclick="Close_Back()" alt="">
+               <img id= "close-btn-dark" class="previous" src="Icons/Back-dark.png" onclick="Close_Back()" alt="">
+               <img id= "close-btn-white" class="previous" src="Icons/Back-white.png" onclick="Close_Back()" alt="">
             </div>
+         </div>
+      </div>
+      <div id="about" class="about-section">
+         <div class="about-content">
+            <div class="about-element"></div>
+            <div class="about-element"></div>
          </div>
       </div>
       <div class="footer"></div>

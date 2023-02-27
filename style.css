@@ -27,12 +27,23 @@ body{
 .triangle{
     width: 15px;
 }
-
+.manage-account-icon-dark{
+    height: 32px;
+    width: 32px;
+    display: none;
+    padding: 5px;
+}
+.manage-account-icon-white{
+    height: 32px;
+    width: 32px;
+    display: block;
+    padding: 5px;
+}
 
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  END  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 .setting{
     text-decoration: underline;
-    color: yellow;
+    color: rgb(101, 0, 141);
     cursor: pointer;
 }
 
@@ -142,6 +153,9 @@ body{
     position: fixed;
     cursor: pointer;
 }
+.setting a{
+    color: rgb(83, 0, 128);
+}
 .blocky{
     width: 60px;
 }
@@ -204,6 +218,7 @@ body{
     cursor: pointer;
     height: 48px;
     position: fixed;
+    display: none;
 }
 
 .side-bar-item{
@@ -270,8 +285,8 @@ p{
     height: 58px;
     width: 58px;
     position: absolute;
-    top: 80px;
     padding: 10px;
+    display: block;
 }
 
 #profile-dropdown{
@@ -440,6 +455,9 @@ p{
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  Display none/block effects Starts from here >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
 
+.about-section{
+    display: none;
+}
 .opend{
     display: none;
 }
@@ -451,9 +469,17 @@ p{
     z-index: 1;
     position: fixed;
 }
+.open-icon{
+    transition: 0.5s;
+    display: block;
+}
+.close-icon{
+    display: none;
+}
 .close{
     display: none;
 }
+
 
 
 

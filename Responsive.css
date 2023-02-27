@@ -39,6 +39,9 @@
     flex-direction: column;
     height: 282px;
     }
+    .sidebar{
+        
+    }
     .middle{
         position: absolute;
     }
