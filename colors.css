@@ -1,4 +1,4 @@
-:root{
+body{
     --main: rgb(255, 115, 0);
     --autofont:rgb(255, 255, 255);
     --autobackground:#1E1E1E;
@@ -8,4 +8,15 @@
     --sky-color:#E4E9F7;
     --light-black:#1d1b31;
 }
+.white-mode{
+    --main: rgb(255, 115, 0);
+    --autofont:rgb(0, 0, 0);
+    --autobackground:#ffffff;
+    --autobackground-2:#ffffff;
+    --black-color:#ffffff;
+    --white-color:#000000;
+    --sky-color:#E4E9F7;
+    --light-black:#1d1b31;
+}
+
 

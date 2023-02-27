@@ -11,6 +11,7 @@ var sidebar = document.getElementById('sidebar');
 function Whitemode(){
   body.classList.toggle('white-mode');
 
+
 }
 
 function Open_Close(){
