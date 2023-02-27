@@ -8,6 +8,8 @@ var sidebar = document.getElementById('sidebar');
 var about = document.getElementById('about');
 
 // ICONS change
+var dark2 = document.getElementById('side-bar-icon-dark');
+var white2 = document.getElementById('side-bar-icon-light');
 var dark = document.getElementById('manage-account-icondark');
 var white = document.getElementById('manage-account-iconwhite');
 var dark1 = document.getElementById('manage-account-icondark-1');
@@ -23,6 +25,8 @@ function Whitemode(){
   white1.classList.toggle('close-icon');
   backbtn_dark.classList.toggle('open-icon');
   backbtn_white.classList.toggle('close-icon');
+  dark2.classList.toggle('open-icon');
+  white2.classList.toggle('close-icon');
 }
 
 function Open_Close(){
