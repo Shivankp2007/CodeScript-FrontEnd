@@ -281,13 +281,7 @@ p{
 .logo{
     cursor: pointer;
 }
-.close-btn{
-    height: 58px;
-    width: 58px;
-    position: absolute;
-    padding: 10px;
-    display: block;
-}
+
 
 #profile-dropdown{
     height: 235px;
@@ -479,7 +473,13 @@ p{
 .close{
     display: none;
 }
-
+.close-btn{
+    height: 58px;
+    width: 58px;
+    position: absolute;
+    padding: 10px;
+    display: block;
+}
 
 
 

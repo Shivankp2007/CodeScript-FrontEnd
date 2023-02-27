@@ -14,6 +14,7 @@ var dark1 = document.getElementById('manage-account-icondark-1');
 var white1 = document.getElementById('manage-account-iconwhite-1');
 var backbtn_white = document.getElementById('close-btn-white');
 var backbtn_dark  = document.getElementById('close-btn-dark');
+//END
 function Whitemode(){
   body.classList.toggle('white-mode');
   dark.classList.toggle('open-icon');
@@ -24,23 +25,6 @@ function Whitemode(){
   backbtn_white.classList.toggle('close-icon');
 }
 
-function Open_About(){
-  if(z.classList.contains("close")){
-  y.classList.remove("open-setings");
-  backbtn_dark.classList.remove("close-btn");
-  backbtn_white.classList.remove("close-btn");
-  sidebar.classList.remove('open-sidebar');
-  z.classList.add('close')
-  about.classList.add('open');
-  }
-  else{
-  z.classList.add('close');
-  about.classList.add('open')
-  }
-  
-  
-
-}
 function Open_Close(){
   x.classList.remove('close');
   x.classList.toggle('open');
@@ -58,6 +42,9 @@ function Close_Back(){
   z.classList.remove("close");
   y.classList.remove("open-setings");
   backbtn_dark.classList.remove("close-btn");
+  backbtn_dark.classList.add("close");
   backbtn_white.classList.remove("close-btn");
+  backbtn_white.classList.add("close");
   sidebar.classList.remove('open-sidebar');
+
 }
