@@ -7,6 +7,7 @@ body{
     --white-color:#fff;
     --sky-color:#E4E9F7;
     --light-black:#1d1b31;
+    --footermain:#1f1f1f;
 }
 .white-mode{
     --main: rgb(255, 115, 0);

@@ -4,6 +4,10 @@
     margin: 0px;
     padding: 0px;
 }
+a{
+    color: var(--autofont);
+    text-decoration: none;
+}
 
 body{
     background-color:var(--autobackground);
@@ -13,6 +17,10 @@ body{
 }
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  Nav-bar CSS Starts from here >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
+.footer-1{
+    display: flex;
+    flex-direction: column;
+}
 
 .navbar{
     height: 80px;
@@ -23,6 +31,7 @@ body{
     justify-content: space-around;
     position: fixed;
     z-index: 1;
+    top: 0;
 }
 .triangle{
     width: 15px;
@@ -30,7 +39,6 @@ body{
 .manage-account-icon-dark{
     height: 48px;
     width: 48px;
-    display: none;
     padding: 10px;
 }
 .manage-account-icon-white{
@@ -38,6 +46,67 @@ body{
     width: 48px;
     padding: 10px;
 }
+.info-btn{
+    background-color: var(--main);
+    outline: transparent;
+    border: transparent;
+    height: 50px;
+    width: 100px;
+    border-radius: 30px;
+    margin: 10px;
+    font-family: Roboto Mono;
+    color: var(--autofont);
+    font-weight: 500;
+    font-size: medium;
+    cursor: pointer;
+}
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  Footer  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+.Footer{
+    background-color: var(--footermain);
+    width: 100%;
+    height: 300px;
+    position:sticky;
+    bottom: 0px;
+    color: var(--autofont);
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+    color: rgb(210, 210, 210);
+
+}
+.social-media-img{
+    height: 48px;
+    width: 48px;
+}
+.medi-item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.Footer-logo{
+    width: 100%;
+    background-color: var(--footersubmain);
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+}
+.social-media{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.footer-content{
+    display: flex;
+}
+.footer-content-item{
+    display: flex;
+    flex-direction: column;
+    margin: 36px;
+}
+
+
 
 
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  END  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
@@ -92,7 +161,8 @@ body{
     font-size: 15px;
 }
 .blank{
-    height: 100px;
+    height: 180px;
+
 }
 .content-head{
     display: flex;
@@ -158,8 +228,8 @@ body{
 }
 
 ::-webkit-scrollbar{
-    background-color:var();
     width: 8px;
+scroll-margin-bottom: 100px;
 }
 ::-webkit-scrollbar-thumb{
     background-color:gray;
@@ -284,6 +354,13 @@ p{
     cursor: pointer;
 }
 
+.drop-menu.active{
+    display: block;
+
+}
+.drop-menu.inactive{
+    display: none;
+}
 
 #profile-dropdown{
     height: 235px;
@@ -291,13 +368,13 @@ p{
     position: relative;
     top: 70px;
     float: right;
-    right: 76px;
+    right: 52px;
     position:fixed;
-    display: block;
     border-radius: 13px;
     background-color: var(--autobackground);
     color:var(--autofont);
     box-shadow: 0px 0px 15px 9px #7e7e7e;
+    z-index: 99;
 }
 .part-1{
     display:flex;
@@ -331,19 +408,7 @@ p{
     margin: 0 auto;
     border-radius: 40px;
   }
-  input[type="checkbox"] {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    bottom: 0px;
-    margin: 0px;
-    cursor: pointer;
-    opacity: 0;
-    z-index: 2;
-  }
+
   #_1st-toggle-btn span {
     position: absolute;
     top: 0px;
@@ -473,11 +538,12 @@ p{
     z-index: 1;
 }
 
-
+.b{
+    cursor: pointer;
+}
 .close-btn{
     height: 48px;
     width: 48px;
-    position: ;
     padding: 10px;
     display: block;
 }
@@ -486,13 +552,32 @@ p{
     height: 749px;
     width: 100%;
     top: 80px;
-    position: absolute;
-    display: none;
+    position: fixed;
+    display: block;
+    left: 10px;
+    top: 196px;
 }
 
+.top-svg{
+    position: fixed;
+    width: 106%;
+    height: 34%;
+    top:11px;
+    z-index: -1;
+}
 
-
-
+.dropdown-menu.active{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    transition: 0.5s ease;
+}
+.dropdown-menu.inactive{
+    opacity: 0;
+    visibility:hidden;
+    transform: translateY(-20px);
+    transition: 0.5s ease;
+}
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  Hover effects Starts from here >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
 
@@ -632,4 +717,192 @@ p{
     color: var(--autofont);
     cursor: pointer;
     padding: 4px;
+}
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<LOGIN PAGE CSS<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+
+.form{
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 530px;
+}
+.mainbox-s{
+    background-color: white;
+    height: 600px;
+    width: 500px;
+    border-radius: 15px;
+    color: #333;
+}
+.mainbox{
+    background-color: white;
+    height: 600px;
+    width: 500px;
+    border-radius: 15px;
+}
+.up-box{
+    background-color:transparent;
+    height: 180px;
+    width: 650px;
+}
+.box{
+    display: flex;
+}
+.form-submit{
+    background-color: var(--main);
+    border-radius: 10px;
+    color: var(--autofont);
+    cursor: pointer;
+}
+.login{
+    text-align: center;
+    font-family:kanit;
+    font-size: 40px;
+    padding:35px;
+    color: black;
+}
+.username{
+    height: fit-content;
+    width: max-content;
+    display: flex;
+    align-items: center;
+    flex-direction:column;
+    margin-left: 100px;
+
+}
+.avatar{
+    height: 36px;
+    width: 36px;
+    padding-right: 10px;
+}
+.nam{
+    display: flex;
+    flex-direction: row;
+}
+.box{
+    display: flex;
+}
+.email{
+    text-align: left;
+}
+.username{
+    font-family: Roboto Mono;
+    font-size: 18px;
+    padding-right: 600px;
+}
+input{
+    font-family: Roboto Mono;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.2;
+    display: block;
+    width: 390px;
+    height: 55px;
+    background: 0 0;
+    padding: 0 7px 0 43px;
+}
+.form-group-s{
+    display: flex;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+.sep-s{
+    width: 300px;
+    height: 1px;
+    background-color: #7a7a7a;
+}
+h2{
+    font-family: Roboto Mono;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+.enter{
+    display: flex;
+    align-items: center;
+}
+.item-1{
+    margin-top: 56px;
+}
+.blank{
+    height: 3px;
+    background-color: grey;
+    margin-top: 50px;
+    width: 100%;
+}
+.last{
+    text-align: center;
+    padding-top: 10px;
+    color: #333;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<SIGN UP PAGE <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
+
+
+.mainbox{
+    background-color: white;
+    height: 600px;
+    width: 520px;
+    display: flex;
+    border-radius: 15px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.up-box{
+    background-color:transparent;
+    height: 254px;
+    width: 650px;
+}
+.box{
+    display: flex;
+    width: 1400px;
+}
+.imgs{
+    height: 330px;
+    width: 370px;
+}
+
+.signup-form{
+    width: 600px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    margin: 30px;
+}
+.signup-image{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+}
+.last{
+    display: flex;
+    align-items: center;
+}
+input{
+width: 100%;
+    display: block;
+    border: none;
+    border-bottom: 1px solid #999;
+    padding: 6px 30px;
+    font-family: Roboto Mono;
+    box-sizing: border-box;
+    outline: none;
+}
+.form-title{
+    font-size: 28px;
+    font-weight: 1000;
+    font-family: Roboto Mono;
+    padding: 10px;
+}
+.form-group{
+    margin-top: 20px;
+    width: 350px;
 }
