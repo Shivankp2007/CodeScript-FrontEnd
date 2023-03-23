@@ -16,6 +16,10 @@ export default function Navbar() {
     }
     document.addEventListener("mousedown", handler)
   });
+
+  const Toggler(
+    
+  )
   return (
     <div>
       <div className="navbar">
@@ -75,7 +79,7 @@ export default function Navbar() {
               <div className="profile-item">
                 <h3>Dark-Mode</h3>
                 <div className="toggle-btn" id="_1st-toggle-btn">
-                  <input type="checkbox" checked />
+                  <input type="checkbox" checked onClick={Toggler} />
                   <span></span>
                 </div>
               </div>
