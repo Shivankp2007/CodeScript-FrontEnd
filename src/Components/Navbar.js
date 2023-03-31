@@ -16,13 +16,7 @@ export default function Navbar() {
     }
     document.addEventListener("mousedown", handler)
   });
-  const [isActive, setActive] = useState("false");
 
-  const ToggleClass = () => {
-    setActive(!isActive);
-  };
-
-  
   return (
     <div>
       <div className="navbar">
@@ -82,7 +76,7 @@ export default function Navbar() {
               <div className="profile-item">
                 <h3>Dark-Mode</h3>
                 <div className="toggle-btn" id="_1st-toggle-btn">
-                  <input type="checkbox" role="switch" checked onClick={ToggleClass} />
+                  <input type="checkbox" role="switch" checked onClick={()=>{setopen(!open)}} />
                   <span></span>
                 </div>
               </div>

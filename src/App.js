@@ -7,7 +7,6 @@ import signup from './Components/SIGNUP/signup.js';
 import setings from './Components/SETINGS/setings';
 import { createContext } from 'react';
 
-export const ThemeContext = createContext("light")
 
 function App() {
   return (
