@@ -1,6 +1,8 @@
 import React from 'react'
 
+
 export default function signup() {
+    const img = [{loc:"./undraw_signup.svg"}]
     return (
         <div>
             <div className="up-box"></div>
@@ -29,8 +31,8 @@ export default function signup() {
                         </form>
                     </div>
                     <div className="signup-image">
-                        <img className="imgs" src="Icons/undraw_secure_login_pdn4.svg" alt="" />
-                        <a href="" className="last"> Already have an account?</a>
+                        <img className="imgs" src="Images/undraw_signup.svg" alt="" />
+                        <a href="" className="last"> Already have an account? Click here</a>
                     </div>
                 </div>
             </div>

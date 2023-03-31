@@ -14,6 +14,7 @@ body{
     color:var(--autofont);
     font-family: Roboto Mono;
     font-size: 18px;
+    overflow: overlay;
 }
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  Nav-bar CSS Starts from here >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
@@ -220,6 +221,7 @@ body{
     position: fixed;
     cursor: pointer;
 }
+
 .setting a{
     color: rgb(83, 0, 128);
 }
@@ -229,8 +231,14 @@ body{
 
 ::-webkit-scrollbar{
     width: 8px;
-scroll-margin-bottom: 100px;
+    scroll-margin-bottom: 100px;
+    overflow: scroll;
+    overflow: overlay;
 }
+::-webkit-scrollbar-track-piece{
+    background-color: transparent;
+}
+
 ::-webkit-scrollbar-thumb{
     background-color:gray;
     border-radius: 30px;
@@ -314,6 +322,7 @@ scroll-margin-bottom: 100px;
 .side-bar-items-text{
     border-left: 3px solid gray;
     padding-left: 10px;
+    cursor: pointer;
 }
 .side-bar-icon-dark{
     height: 38px;
@@ -408,62 +417,13 @@ p{
     margin: 0 auto;
     border-radius: 40px;
   }
-
-  #_1st-toggle-btn span {
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    overflow: hidden;
-    opacity: 1;
-    background-color: #fff;
-    box-shadow: 0px 2px 25px #d9d9d9;
-    border-radius: 40px;
-    transition: 0.2s ease background-color, 0.2s ease opacity;
-  }
-  
-  #_1st-toggle-btn span:after,
-  #_1st-toggle-btn span:before {
-    content: "";
-    position: absolute;
-    top: 8px;
-    width: 23px;
-    height: 20px;
-    border-radius: 50%;
-    transition: 0.5s ease 
-    transform, 0.2s ease background-color;
-  }
-  
-  #_1st-toggle-btn span:after{
-    background-color: #fff;
-    transform: translate(-8px, 0px);
-    z-index: 1;
-  }
-  
-  #_1st-toggle-btn span:before{
-    background-color: #000;
-    transform: translate(8px, 0px);
-    z-index: 0;
-  }
-  
-  #_1st-toggle-btn input[type="checkbox"]:checked + span {
-    background-color: #000;
-  }
-  
-  #_1st-toggle-btn input[type="checkbox"]:active + span {
-    opacity: 0.5;
-  }
-  
-  #_1st-toggle-btn input[type="checkbox"]:checked + span:after {
-    background-color: #000;
-    transform: translate(16px, -19px);
-  }
-  
-  #_1st-toggle-btn input[type="checkbox"]:checked + span:before{
-    background-color: #fff;
-    transform: translate(49px, -1px);
-  }
+.part-4{
+    background-color: var(--autobackgroundblack);
+    /* background-blend-mode: color-dodge; */
+    opacity: 66%;
+    border-radius: 10px;
+}
+ 
   h3{
     padding-left: 5px;
   }
@@ -562,7 +522,7 @@ p{
     position: fixed;
     width: 106%;
     height: 34%;
-    top:11px;
+    top:-34px;
     z-index: -1;
 }
 
@@ -602,7 +562,7 @@ p{
 
 
 .white-mode{
-    background-color: white;
+    background-color: var(--autobackgroundblack);
     color: rgb(0, 0, 0);
 }
 .setings_section-your-account{
@@ -727,14 +687,16 @@ p{
     height: 530px;
 }
 .mainbox-s{
-    background-color: white;
+    background-color: var(--autobackgroundblack);
     height: 600px;
     width: 500px;
     border-radius: 15px;
     color: #333;
+    display: flex;
+    flex-direction: row;
 }
 .mainbox{
-    background-color: white;
+    background-color: var(--autobackgroundblack);
     height: 600px;
     width: 500px;
     border-radius: 15px;
@@ -758,7 +720,7 @@ p{
     font-family:kanit;
     font-size: 40px;
     padding:35px;
-    color: black;
+    color:var(--autofont)
 }
 .username{
     height: fit-content;
@@ -844,7 +806,7 @@ h2{
 
 
 .mainbox{
-    background-color: white;
+    background-color: var(--autobackgroundblack);
     height: 600px;
     width: 520px;
     display: flex;
@@ -881,6 +843,7 @@ h2{
     align-items: center;
     flex-direction: column;
     margin-top: 100px;
+    margin-left: 65px;
 }
 .last{
     display: flex;
@@ -895,12 +858,18 @@ width: 100%;
     font-family: Roboto Mono;
     box-sizing: border-box;
     outline: none;
+    
+}
+::placeholder{
+    color: var(--autofontblack);
+    opacity: 100%;
 }
 .form-title{
     font-size: 28px;
     font-weight: 1000;
     font-family: Roboto Mono;
     padding: 10px;
+    color: var(--autofont-1);
 }
 .form-group{
     margin-top: 20px;

@@ -19,7 +19,7 @@ function setings() {
                             <div className="side-bar-items">
                                 <div className="side-bar-item" onclick="Click_Tab_YourAccount()">
                                     <img id="side-bar-icon-light" className="side-bar-icon-light" src="/Icons/Acc-setings-light.png" alt="" />
-                                    <div className="side-bar-items-text">Your Account</div>
+                                    <div className="side-bar-items-text"><a href="setings/youraccount">Your Account</a></div>
                                 </div>
                             </div>
                             <div className="side-bar-items">

@@ -7,24 +7,34 @@ import { useState } from 'react';
 
 export default function Navbar() {
   const [open, setopen] = useState(false);
-  
-  useEffect(()=>{
-    let handler = (e)=>{
-      if(e.target){
+
+  useEffect(() => {
+    let handler = (e) => {
+      if (e.target) {
         setopen(false);
-      } 
+      }
     }
     document.addEventListener("mousedown", handler)
   });
-
+  const [theme, setTheme] = useState('dark');
+  const toggleTheme = () => {
+    if (theme === 'light') {
+      setTheme('dark');
+    } else {
+      setTheme('light');
+    }
+  };
+  useEffect(() => {
+    document.body.className = theme;
+  }, [theme]);
   return (
     <div>
       <div className="navbar">
         <Link to="/">
-        <div className="logo">CodecScript 
-        </div>
+          <div className="logo">CodecScript
+          </div>
         </Link>
-        
+
         <div className="Search-box">
           <input type="text" name="" id="Search-bar" placeholder="Search here...." />
           <button className="Search-btn">Search</button>
@@ -44,13 +54,13 @@ export default function Navbar() {
           <div className="blocky"></div>
           <li>About Us</li>
           <div className="blocky"></div>
-          <a className="dark-icon-link" type="button" onClick={()=>{setopen(!open)}} >
-            <img id="dark-icon" src={Profile} alt=""  />
+          <a className="dark-icon-link" type="button" onClick={() => { setopen(!open) }} >
+            <img id="dark-icon" src={Profile} alt="" />
           </a>
         </div>
 
 
-          <div id="profile-dropdown" className={`dropdown-menu ${open? 'active':'inactive'}`}>
+        <div id="profile-dropdown" className={`dropdown-menu ${open ? 'active' : 'inactive'}`}>
           <div className="part-1">
             <div className="avatar-wrap"><img className="avatar" src={Avatar} alt="" /></div>
             <div className="name">
@@ -75,16 +85,17 @@ export default function Navbar() {
             <div className="part-4">
               <div className="profile-item">
                 <h3>Dark-Mode</h3>
-                <div className="toggle-btn" id="_1st-toggle-btn">
-                  <input type="checkbox" role="switch" checked onClick={()=>{setopen(!open)}} />
-                  <span></span>
+                <div className="switch">
+                  <input type="checkbox" className="checkbox" onClick={toggleTheme} />
+                  <span className="inner" />
+                  <span className="switch" />
                 </div>
               </div>
             </div>
           </div>
         </div>
-      <img className='top-svg' src={wave} alt="" />
-    </div> 
+        <img className='top-svg' src={wave} alt="" />
+      </div>
     </div>
   )
 }
