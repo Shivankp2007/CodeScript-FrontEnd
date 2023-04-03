@@ -1,8 +1,20 @@
-import React from 'react'
+import React, { UseState } from 'react'
 
 
 export default function signup() {
-    const img = [{loc:"./undraw_signup.svg"}]
+    const [user,setuser] = UseState({
+        name:"",
+        email:"",
+        password:"",
+        reEnterPassword:"",
+    })
+    const handleChange = e =>{
+        const{name,value} = e.target
+        setuser({
+            ...user,
+            [name]:value
+        })
+    }
     return (
         <div>
             <div className="up-box"></div>
@@ -13,20 +25,20 @@ export default function signup() {
                         <h2 className="form-title">Sign up</h2>
                         <form method="POST" className="register-form" id="register-form">
                             <div className="form-group">
-                                <input type="text" name="name" id="name" placeholder="Your Name" />
+                                <input type="text" name="name" value={user.name} placeholder="Your Name" onChange={handleChange} />
                             </div>
                             <div className="form-group">
-                                <input type="email" name="email" id="email" placeholder="Your Email" />
+                                <input type="email" name="email" value={user.email} placeholder="Your Email" onChange={handleChange} />
                             </div>
                             <div className="form-group">
 
-                                <input type="password" name="pass" id="pass" placeholder="Password" />
+                                <input type="password" name="password" value={user.password} placeholder="Password" onChange={handleChange} />
                             </div>
                             <div className="form-group">
-                                <input type="password" name="re_pass" id="re_pass" placeholder="Repeat your password" />
+                                <input type="password" name="reEnterPassword" value={user.reEnterPassword} placeholder="Repeat your password" onChange={handleChange} />
                             </div>
                             <div className="form-group form-button">
-                                <input type="submit" name="signup" id="signup" className="form-submit" value="Register" />
+                                <input type="submit" name="signup"  className="form-submit" value="Register" />
                             </div>
                         </form>
                     </div>
