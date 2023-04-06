@@ -1,20 +1,24 @@
 import React, { UseState } from 'react'
+import { Axios } from 'axios';
 
 
 export default function signup() {
-    const [user,setuser] = UseState({
-        name:"",
-        email:"",
-        password:"",
-        reEnterPassword:"",
-    })
-    const handleChange = e =>{
-        const{name,value} = e.target
-        setuser({
-            ...user,
-            [name]:value
+    const [email,setEmail] = UseState('')
+  const [password,setPassword] = UseState('')
+
+  async function submit(e){
+    e.preventDefault();
+
+    try{
+        await Axios.post("http://localhost:8000/signup",{
+            email,password
         })
     }
+    catch(e){
+        console.log(e);
+    }
+  }
+
     return (
         <div>
             <div className="up-box"></div>

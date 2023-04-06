@@ -1000,7 +1000,7 @@ width: 100%;
 .content1{
     height: 250px;
     width: 100%;
-    background-color: #052038;
+    background-color: var(--autobackground-2);
     display: flex;
 }
 .title{
