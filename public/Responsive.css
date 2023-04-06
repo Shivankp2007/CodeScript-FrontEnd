@@ -16,8 +16,8 @@
 }
 @media screen and (max-width:1440px) {
     #profile-dropdown{
-        right: -28px;
-        top: 280px;
+        right: 14px;
+        top: 85px;
         background: transparent;
         display: flex;
         flex-direction: column;
@@ -28,6 +28,9 @@
     }
     .part-2{
         background-color: var(--autobackground);
+    }
+    .top-svg{
+        width: 1440px;
     }
     
 }
@@ -90,6 +93,21 @@
     display: flex;
     flex-direction: column;
     height: 135px;
+    }
+    
+}
+
+
+@media  screen and (max-width:1440px) {
+    .box{
+        width: 940px;
+        height: 600px;
+    }
+    .mainbox{
+        width: 575px;
+    }
+    .up-box{
+        height: 0px;
     }
     
 }
