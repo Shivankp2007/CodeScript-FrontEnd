@@ -2,7 +2,7 @@ import React, { UseState } from 'react'
 import { Axios } from 'axios';
 
 
-export default function signup() {
+export default function Signup() {
     const [email,setEmail] = UseState('')
   const [password,setPassword] = UseState('')
 

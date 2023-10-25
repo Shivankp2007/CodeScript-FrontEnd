@@ -2,7 +2,7 @@ import axios from "axios";
 import React from "react";
 import { useState } from "react";
 
-const login = () => {
+const Login = () => {
   const [email,setEmail] = useState('')
   const [password,setPassword] = useState('')
 
@@ -10,7 +10,7 @@ const login = () => {
     e.preventDefault();
 
     try{
-        await axios.post("http://localhost:8000/",{
+        await axios.post("http://localhost:5000/",{
             email,password
         })
     }
@@ -61,4 +61,4 @@ const login = () => {
   );
 };
 
-export default login;
+export default Login;
